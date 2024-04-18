@@ -14,6 +14,8 @@ def collect_images(source_dirs, output_dir):
             for file in files:
                 if file.lower().endswith(image_extensions):
                     file_path = os.path.join(root, file)
+                    # 将文件名转换为小写
+                    file = file.lower()
                     # 创建输出文件的路径
                     output_file_path = os.path.join(output_dir, file)
                     
@@ -29,13 +31,14 @@ def collect_images(source_dirs, output_dir):
                     
                     print(f"Copied: {file_path} -> {output_file_path}")
 
+
 # 源目录列表
 source_dirs = [
-    ""
+    "",
 ]
 
 # 输出目录
-output_dir = "collect_images"
+output_dir = "/collect_images"
 
 # 执行图片收集
 collect_images(source_dirs, output_dir)

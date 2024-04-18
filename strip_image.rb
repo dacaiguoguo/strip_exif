@@ -27,7 +27,7 @@ process_directory(directory_path)
 
 
 require 'tinify'
-Tinify.key = "your_api_key" # 替换为你的 API 密钥
+Tinify.key = "gTMl0Bt2nr6KTHk4vWzkDjvrj8ZgNgZz" # 替换为你的 API 密钥
 
 def compress_image(image_path, output_path)
   source = Tinify.from_file(image_path)
